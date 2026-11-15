@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CSD WELDINSTAL | Sudură și Instalații</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #111315;
+            color: white;
+        }
+
+        header {
+            background: #191c1f;
+            padding: 25px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #e87524;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: #e87524;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #e87524;
+        }
+
+        .hero {
+            min-height: 570px;
+            padding: 100px 8%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background: linear-gradient(
+                90deg,
+                rgba(0,0,0,0.95),
+                rgba(0,0,0,0.45)
+            ),
+            url("https://images.unsplash.com/photo-1504917595217-d4dc5ebe6122?w=1600")
+            center/cover;
+        }
+
+        .hero h1 {
+            font-size: 55px;
+            max-width: 750px;
+            margin-bottom: 20px;
+        }
+
+        .hero h1 span {
+            color: #e87524;
+        }
+
+        .hero p {
+            font-size: 19px;
+            color: #ddd;
+            max-width: 600px;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #e87524;
+            color: white;
+            padding: 16px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            width: fit-content;
+        }
+
+        section {
+            padding: 80px 8%;
+        }
+
+        .section-title {
+            font-size: 34px;
+            margin-bottom: 20px;
+        }
+
+        .section-title span {
+            color: #e87524;
+        }
+
+        .about p {
+            color: #bbb;
+            line-height: 1.8;
+            max-width: 850px;
+            font-size: 17px;
+        }
+
+        .services {
+            background: #191c1f;
+        }
+
+        .service-list {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-top: 35px;
+        }
+
+        .service {
+            background: #25292d;
+            padding: 35px;
+            border-bottom: 3px solid #e87524;
+        }
+
+        .service h3 {
+            margin-bottom: 15px;
+            color: #e87524;
+        }
+
+        .service p {
+            color: #bbb;
+            line-height: 1.7;
+        }
+
+        .contact {
+            text-align: center;
+        }
+
+        .contact p {
+            color: #bbb;
+            margin: 20px 0;
+        }
+
+        footer {
+            background: #080909;
+            padding: 25px;
+            text-align: center;
+            color: #888;
+        }
+
+        @media (max-width: 750px) {
+            header {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            nav a {
+                margin: 0 7px;
+                font-size: 12px;
+            }
+
+            .hero h1 {
+                font-size: 38px;
+            }
+
+            .service-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">CSD <span>WELDINSTAL</span></div>
+
+    <nav>
+        <a href="#acasa">ACASĂ</a>
+        <a href="#despre">DESPRE NOI</a>
+        <a href="#servicii">SERVICII</a>
+        <a href="#contact">CONTACT</a>
+    </nav>
+</header>
+
+<div class="hero" id="acasa">
+    <h1>SUDURĂ ȘI INSTALAȚII <span>INDUSTRIALE</span></h1>
+
+    <p>
+        CSD WELDINSTAL oferă servicii de sudură și instalații
+        pentru șantiere și proiecte industriale în Brașov și împrejurimi.
+        Profesionalism, calitate și seriozitate în fiecare proiect.
+    </p>
+
+    <a href="#contact" class="button">
+        CONTACTEAZĂ-NE
+    </a>
+</div>
+
+<section class="about" id="despre">
+    <h2 class="section-title">DESPRE <span>NOI</span></h2>
+
+    <p>
+        CSD WELDINSTAL este o firmă specializată în lucrări
+        de sudură și instalații pe șantiere și în mediul
+        industrial. Ne concentrăm pe calitatea lucrărilor,
+        seriozitate și profesionalism.
+    </p>
+</section>
+
+<section class="services" id="servicii">
+    <h2 class="section-title">SERVICIILE <span>NOASTRE</span></h2>
+
+    <div class="service-list">
+
+        <div class="service">
+    <h3>Sudură profesională</h3>
+    <p>
+        Servicii de sudură MMA, TIG/WIG, MIG/MAG
+        și alte procedee de îmbinare.
+    </p>
+</div>
+
+<div class="service">
+    <h3>Instalații apă și termice</h3>
+    <p>
+        Lucrări de montaj, sudură și îmbinare
+        pentru conducte de apă și instalații termice.
+    </p>
+</div>
+
+<div class="service">
+    <h3>Conducte tehnologice industriale</h3>
+    <p>
+        Lucrări de sudură și instalații pentru
+        conducte și sisteme tehnologice industriale.
+    </p>
+</div>
+
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2 class="section-title">HAI SĂ <span>DISCUTĂM!</span></h2>
+
+    <p>
+        Ai un proiect sau dorești o ofertă?
+        Contactează CSD WELDINSTAL.
+    </p>
+
+    <a href="tel:0472894755" class="button">
+        SUNĂ ACUM: 0742894755
+        <a href="https://wa.me/40742894755"
+   class="whatsapp-float"
+   target="_blank"
+   aria-label="Contact WhatsApp">
+   <span>✆</span>
+</a>
+
+<style>
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 25px;
+    right: 25px;
+    background: #25D366;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    z-index: 999;
+}
+</style>
+    </a>
+   
+    </a>
+</section>
+
+<footer>
+    © 2026 CSD WELDINSTAL. Toate drepturile rezervate.
+</footer>
+
+</body>
+</html>
